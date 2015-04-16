@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Pemesanan extends Migration
+class Pemesan extends Migration
 {
     /**
      * Run the migrations.

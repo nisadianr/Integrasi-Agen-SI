@@ -50,6 +50,7 @@
                 <div class="span7 input-control text info-state">
                     <input type="date" id="tanggal"/><br>
                 </div>
+<<<<<<< HEAD
                 <div class="span2">Kelas</div>
                 <div class="span7 input-control select info-state">
                 <select name="kelas">
@@ -76,6 +77,12 @@
                 <div class="span2">Keterangan</div>
                 <div class="span7 input-control textarea info-state">
                   <textarea type="text" id="keterangan" placeholder="keterangan"></textarea><br>
+=======
+                <div class="span2">Nomor Kursi</div>
+                <div class="span7 input-control text info-state">
+                    <input placeholder="nomor kursi" id="nomor kursi"></input>
+                <br>
+>>>>>>> 86e6d114e998b8a4547b41aefbf477ed0c4bbfd8
                 </div>
                  <div style="padding-left: 160px">
                 <button type="submit" class="bg-darkBlue fg-white large" id="">Submit</button>
