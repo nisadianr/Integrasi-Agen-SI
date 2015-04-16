@@ -72,10 +72,6 @@
                 <div class="span7 input-control text info-state">
                     <input type="date" id="tanggal"/><br>
                 </div>
-                <div class="span2">Kode Bus</div>
-                <div class="span7 input-control text info-state">
-                    <input placeholder="kode bus" id="kode bus"/><br>
-                </div>
                 <div class="span2">Nomor Kursi</div>
                 <div class="span7 input-control text info-state">
                     <input placeholder="nomor kursi" id="nomor kursi"></input>

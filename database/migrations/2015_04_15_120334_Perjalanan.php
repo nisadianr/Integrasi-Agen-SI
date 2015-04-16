@@ -18,6 +18,7 @@ class Perjalanan extends Migration
             $table->string('No_Trayek', 10);
             $table->string('No_Bus',10);
             $table->integer('Harga');
+            $table->integer('No_Kursi');
 
             $table->foreign('No_Trayek')->references('No_Trayek')->on('Trayek');
             $table->foreign('No_Bus')->references('No_Bus')->on('Bus');

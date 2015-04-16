@@ -31,6 +31,6 @@ class Bus extends Migration
     public function down()
     {
         //
-        Schema::drop('Bus');
+        Schema::drop('bus');
     }
 }

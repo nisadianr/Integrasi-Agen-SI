@@ -19,6 +19,9 @@ class Agent extends Migration
             $table->string('nama');
             $table->string('lokasi');
             $table->string('password',20);
+            $table->string('No_Telp',20);
+
+            $table->primary('id');
         });
     }
 

@@ -48,4 +48,8 @@ class WelcomeController extends Controller
     public function pariwisata(){
         return view('pariwisata');
     }
+
+    public function pemesanan(){
+        return view('pemesanan');
+    }
 }

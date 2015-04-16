@@ -12,14 +12,7 @@ class TrayekViaKota extends Migration
      */
     public function up()
     {
-        //
-        Schema::create('Trayek_ViaKota',function(Blueprint $table){
-            $table->string('No_Trayek',10);
-            $table->string('Kota',20);
-
-            $table->foreign('No_Trayek')->references('No_Trayek')->on('Trayek');
-            $table->primary('Kota');
-        });
+        
     }
 
     /**
@@ -30,6 +23,6 @@ class TrayekViaKota extends Migration
     public function down()
     {
         //
-        Schema::drop('Trayek_ViaKota');
+        Schema::drop('trayek_viakota');
     }
 }
