@@ -32,14 +32,14 @@
                 <img src="{{ asset('image/logo-be.png') }}">
             </div><br><br><br>
             <div class="span6 offset2"><br><br>
-                <form method="" action="">
+                <form method="" action="login/val">
                    <label>Username</label>
                     <div class="span4 input-control text info-state">
-                        <input type="text" placeholder="username" id="username"/>
+                        <input type="text" placeholder="username" id="username" name="username"/>
                     </div><br><br>
                     <label>Password</label>
                     <div class="span4 input-control text info-state">
-                        <input type="password" placeholder="password" id="password"/>
+                        <input type="password" placeholder="password" id="password" name="password"/>
                     </div>
                     
                     <div style="padding-top:50px">

@@ -15,13 +15,12 @@ class Agent extends Migration
         //
         Schema::create('agent',function(Blueprint $table)
         {
-            $table->string('id');
-            $table->string('nama');
+            $table->string('username');
             $table->string('lokasi');
             $table->string('password',20);
             $table->string('No_Telp',20);
 
-            $table->primary('id');
+            $table->primary('username');
         });
     }
 

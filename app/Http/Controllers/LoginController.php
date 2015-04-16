@@ -1,10 +1,33 @@
 <?php namespace App\Http\Controllers;
-
+use App\Article;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Cookie\CookieJar;
 
+use App\Agent;
 class LoginController extends Controller
 {
     //
+    public function login(){
+    	$username=Request::get('username');
+    	$pass=Request::get('password');
+
+    	if($username == 'admin'){
+    		//set cookie jaid admin
+
+    	}
+    	$real_password=Agent::where('username','=',$username)->get();
+    	if($real_password != null){
+    		if($real_password == $pass){
+    // 			$response = new \Illuminate\Http\Response(view('welcome'));
+				// $response->withCookie(cookie('referrer', $request->referrer, 45000));
+				return view('home');
+    		}
+    	}
+    	else{
+    		return redirect()->back();
+    	}
+    }
+
 }
