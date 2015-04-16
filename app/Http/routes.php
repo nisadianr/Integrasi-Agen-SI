@@ -23,4 +23,4 @@ Route::get('about','HomeController@about');
 Route::get('login/val','LoginController@login');
 
 Route::controller('/','Auth\AuthController');
-Route::controller('pemesanan','PemesananController');
+//Route::controller('pemesanan','PemesananController');

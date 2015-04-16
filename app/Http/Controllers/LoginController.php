@@ -17,17 +17,21 @@ class LoginController extends Controller
     		//set cookie jaid admin
 
     	}
-    	$real_password=Agent::where('username','=',$username)->get();
-    	if($real_password != null){
-    		if($real_password == $pass){
-    // 			$response = new \Illuminate\Http\Response(view('welcome'));
-				// $response->withCookie(cookie('referrer', $request->referrer, 45000));
-				return view('home');
-    		}
-    	}
-    	else{
-    		return redirect()->back();
-    	}
+    	$real_pass=Agent::where('username','=',$username)->firstOrFail();
+        if($real_password != null){
+            $real=var_dump($real_pass->password);
+        }
+    // 	if($real_password != null){
+    // 		if($real_password == $pass){
+    // // 			$response = new \Illuminate\Http\Response(view('welcome'));
+				// // $response->withCookie(cookie('referrer', $request->referrer, 45000));
+				// return view('home');
+    // 		}
+    // 	}
+    // 	else{
+    // 		return redirect()->back();
+    // 	}
+    	return $real_password;
     }
 
 }
