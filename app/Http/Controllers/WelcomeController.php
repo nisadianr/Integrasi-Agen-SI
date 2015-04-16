@@ -32,24 +32,4 @@ class WelcomeController extends Controller
     {
         return view('home');
     }
-
-    public function login(){
-        return view('login');
-    }
-
-    public function about(){
-        return view('about');
-    }
-
-    public function akap(){
-        return view('akap');
-    }
-
-    public function pariwisata(){
-        return view('pariwisata');
-    }
-
-    public function pemesanan(){
-        return view('pemesanan');
-    }
 }

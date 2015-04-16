@@ -12,12 +12,15 @@
 */
 
 Route::get('/', 'WelcomeController@index');
-Route::get('home', 'WelcomeController@index');
+Route::get('/',['as'=>'home','uses'=>'HomeController@index']);
 
 //user header
-Route::get('pariwisata','WelcomeController@pemesanan');
-Route::get('akap','WelcomeController@akap');
-Route::get('login','WelcomeController@login');
-Route::get('about','WelcomeController@about');
+Route::get('pariwisata','HomeController@pemesanan');
+Route::get('akap','HomeController@akap');
+Route::get('login','HomeController@login');
+Route::get('about','HomeController@about');
 
 Route::get('login/val','LoginController@login');
+
+Route::controller('/','Auth\AuthController');
+Route::controller('pemesanan','PemesananController');

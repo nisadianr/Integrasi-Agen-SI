@@ -32,20 +32,23 @@
                 <img src="{{ asset('image/logo-be.png') }}">
             </div><br><br><br>
             <div class="span6 offset2"><br><br>
-                <form method="" action="login/val">
-                   <label>Username</label>
+                {!!Form::open(['url'=>'/login'])!!}
+                   {!! Form::label('username','Username') !!}
+				   @foreach($errors->all() as $error)
+						<p class="alert alert-danger fg-red">{!!$error!!}</p>
+					@endforeach
                     <div class="span4 input-control text info-state">
-                        <input type="text" placeholder="username" id="username" name="username"/>
+                        {!! Form::text('username',Input::old('username')) !!}
                     </div><br><br>
-                    <label>Password</label>
+                    {!! Form::label('password','Password') !!}
                     <div class="span4 input-control text info-state">
-                        <input type="password" placeholder="password" id="password" name="password"/>
+                        {!! Form::password('password') !!}
                     </div>
                     
                     <div style="padding-top:50px">
-                    <button type="submit" class="bg-darkBlue fg-white large" id="">Login</button>
+                    {!!Form::submit('Login',['class'=>'bg-darkBlue fg-white large'])!!}
                     </div>
-                </form>
+				{!!Form::close()!!}
             </div>
         </div>
     </div>
