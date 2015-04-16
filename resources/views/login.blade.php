@@ -20,6 +20,7 @@
         <div class="navigation-bar-content container">
             <a class="element1 pull-menu" href="#"></a>
             <ul class="element-menu">
+			 <li><br><a href="home">Home</a></li>
             </ul>
             <br>
             <div class="element place-right"><a href="login.php" class="fg-gray">Login</a></div>
