@@ -12,3 +12,10 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+Route::get('home', 'WelcomeController@index');
+
+//user header
+Route::get('pariwisata','WelcomeController@akap');
+Route::get('akap','WelcomeController@akap');
+Route::get('login','WelcomeController@login');
+Route::get('about','WelcomeController@about');
